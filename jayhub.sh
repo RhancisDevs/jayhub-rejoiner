@@ -3,7 +3,8 @@
 termux-setup-storage && \
 yes | pkg update && \
 yes | pkg upgrade && \
-yes | pkg install python python-pip tsu libexpat openssl curl -y && \
+yes | pkg install python python-pip tsu curl -y && \
+pip install requests && \
 curl -Ls "https://raw.githubusercontent.com/RhancisDevs/nonse/main/weather-rejoiner.py" -o /sdcard/Download/weather-rejoiner.py
 
 echo ""
